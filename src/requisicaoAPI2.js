@@ -51,7 +51,7 @@ export function pegaLatitudeELongitude(nome) {
     url:
       "https://maps.googleapis.com/maps/api/geocode/json?address=" +
       nome +
-      "&key=AIzaSyBQixy4C0bsWppEfD912hIECmaZvbblFKQ",
+      "&key=",
     type: "GET",
     dataType: "json",
     async: false,
@@ -70,7 +70,7 @@ export function previsaoTempo(lat, lon) {
       lat +
       "&lon=" +
       lon +
-      "&exclude=hourly,minutely&units=metric&lang=pt_br&appid=f02fd4dd74bbd4ce789c78ae0013eb03",
+      "&exclude=hourly,minutely&units=metric&lang=pt_br&appid=",
     type: "GET",
     dataType: "json",
     async: false,
