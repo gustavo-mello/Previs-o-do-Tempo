@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2021-1-GRUPO4</title>
+    <link rel="stylesheet" type="text/css" href="style/index.css">
+    <link rel="stylesheet" type="text/css" href="node_modules/slick-carousel/slick/slick.css">
+    <link rel="stylesheet" type="text/css" href="node_modules/slick-carousel/slick/slick-theme.css">
+    <script type="module" src="src/index.js"></script>
+    <script type="module" src="src/requisicaoAPI2.js"></script>
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/js-cookie/dist/js.cookie.js"></script>
+    <script src="node_modules/slick-carousel/slick/slick.js"></script>
+    <script src="node_modules/slick-carousel/slick/slick.min.js"></script>
+    <script type="module" src="node_modules/chart.js/dist/chart.js"></script>
+    <script defer src="node_modules/@fortawesome/fontawesome-free/js/brands.js"></script>
+    <script defer src="node_modules/@fortawesome/fontawesome-free/js/solid.js"></script>
+    <script defer src="node_modules/@fortawesome/fontawesome-free/js/fontawesome.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="header">
+                <div class="pesquisa">
+                    <input class="input-pesquisa" id="nome-cidade" placeholder="Busca cidades ..." list="nomes-cidades">
+                    <button class="busca" id="buscar-cidade">
+                        <i class="fa fa-2x fa-search"></i>
+                    </button>
+                    <datalist id="nomes-cidades">
+                    </datalist><br> <br>
+                </div>
+                <div class="favoritos" id="favoritos">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="container-previsao">
+        <div class="row" id="row">
+        </div>
+        <div class="buttons">
+            <button class="button" id="button-add">Adicionar aos Favoritos</button>
+            <button class="button" id="button-7d">Previsão 7 dias</button>
+            <button class="button" id="button-14d">Previsão 14 dias</button>
+        </div>
+    </div>
+    <br><br>
+
+    <div class="container-previsao-7d">
+        <div class="row-7d" id="row-7d">
+        </div>
+    </div>
+
+    <div class="container-previsao-14d">
+        <div class="row-14d" id="row-14d">
+        </div>
+    </div>
+
+
+    <br><br>
+    <div class="graficos">
+        <div class="container-grafico-temp" id="grafico-temp-cont">
+            <!-- <canvas id="grafico-temp" class="grafico-temp" width="400" height="100"></canvas> -->
+        </div>
+        <br>
+        <div class="container-grafico-prob" id="grafico-prob-cont">
+            <!-- <canvas id="grafico-prob" class="grafico-prob" width="400" height="100"></canvas> -->
+        </div>
+    </div>
+</body>
+
+
+</html>
